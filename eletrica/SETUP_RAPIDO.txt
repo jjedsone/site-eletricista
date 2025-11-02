@@ -1,0 +1,66 @@
+═══════════════════════════════════════════════════════════════
+    ⚡ GUIA RÁPIDO DE CONFIGURAÇÃO - Sistema Elétrico ⚡
+═══════════════════════════════════════════════════════════════
+
+📋 PASSO 1: INSTALAR DEPENDÊNCIAS
+═══════════════════════════════════════════════════════════════
+Abra o terminal na pasta 'eletrica' e execute:
+
+    npm install
+
+
+📋 PASSO 2: CRIAR ARQUIVO .ENV
+═══════════════════════════════════════════════════════════════
+Crie um arquivo chamado:  .env
+
+Na pasta: eletrica\.env
+
+Cole este conteúdo:
+
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+
+
+📋 PASSO 3: CONFIGURAR FIREBASE
+═══════════════════════════════════════════════════════════════
+1. Acesse: https://console.firebase.google.com
+2. Crie um novo projeto
+3. Habilite:
+   - Authentication (Email/Password)
+   - Firestore Database
+   - Storage
+4. Copie as credenciais (ícone engrenagem > Configurações > Seus aplicativos > Web)
+5. Cole as credenciais no arquivo .env
+
+
+📋 PASSO 4: CRIAR USUÁRIO ADMIN
+═══════════════════════════════════════════════════════════════
+No Firebase Console:
+1. Vá em Authentication
+2. Clique em "Users"
+3. Clique em "Add user"
+4. Digite email e senha
+5. Salve
+
+
+📋 PASSO 5: EXECUTAR O PROJETO
+═══════════════════════════════════════════════════════════════
+No terminal, execute:
+
+    npm run dev
+
+Acesse: http://localhost:5173
+
+
+📋 PRONTO! 🎉
+═══════════════════════════════════════════════════════════════
+Faça login com o email e senha criados no Firebase!
+
+═══════════════════════════════════════════════════════════════
+ℹ️ Para instruções detalhadas, consulte: INSTRUCOES_FIREBASE.md
+═══════════════════════════════════════════════════════════════
+
